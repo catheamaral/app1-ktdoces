@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Disk Doces</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <div >
+    <img src="https://static9.depositphotos.com/1223903/1099/v/950/depositphotos_10995086-stock-illustration-candy-heart.jpg" height=”40%” width="20%" align="left">
+
+    <h4>Disk Doces</h4>
+    <p>Tem doces</p> <br><br>
+    
+  </div>
+
+ 
+    <ion-card (click)="detalhaDoce(i)" *ngFor="let produto of produtos;let i = index">
+      <ion-item>
+        <img src="{{produto.imagem}}" width=”20%” height=”40%”/></ion-item>
+      <div class="card-title">{{produto.produto}}</div>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    
+    <ion-title>
+      Pagamento
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <h4> Nos diga onde entregar</h4>
+
+  <ion-list>
+      <ion-item>
+        <ion-label color="primary" floating>Rua </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Nº </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Bairro </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating> Complemento </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>Forma de Pagamento</ion-label>
+      <ion-select [(ngModel)]="pg">
+        <ion-option value="nes">Em dinheiro</ion-option>
+        <ion-option value="n64">Com Cartão</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+  <h4 style="text-align: center"> *Taxa de entrega fixa de R$ 2,00</h4>
+
+
+  <ion-row>
+    <ion-col width-50 style="text-align: center">
+     <button ion-button round (click)="statusPag()">Enviar</button>
+     </ion-col>
+   </ion-row>
+</ion-content>

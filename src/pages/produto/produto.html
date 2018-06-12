@@ -1,0 +1,36 @@
+<!--
+  Generated template for the ProdutoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	
+    <ion-title>{{produto.produto}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-align: center>
+
+	<img src="{{produto.imagem}}" text-align: center/>
+
+	<h2> Ingredientes </h2>
+	
+	<br><br>
+
+	<!-- <h3> Trigo, açúcar, chocolate em pó, óleo, ovos, água, fermento, margarina, leite </h3> -->
+	
+
+	<ion-row>
+    <ion-col width-50 style="text-align: center">
+     <button ion-button round (click)="addCarrinho()">Adicionar ao Carrinho</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+

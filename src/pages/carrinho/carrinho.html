@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+  	
+    <ion-title>
+      Carrinho
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<hr>
+
+	<ion-list>
+	  <ion-item>
+			<img src="{{produto.imagem}}" width=”20%” height=”40%”/>
+      <div class="card-title">{{produto.produto}}</div>
+	  </ion-item>
+	  <ion-item>
+			<ion-input placeholder="Quantidade..." type="number"></ion-input>
+	  </ion-item>
+	</ion-list>
+
+	<hr>
+	<ion-row>
+    <ion-col width-50 style="text-align: center">
+     <button ion-button round (click)="pagamentoPag()">Confirmar</button>
+     </ion-col>
+   </ion-row>
+
+</ion-content>
+
