@@ -16,9 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class StatusPage {
 
   produto: any
+  quantidade: any
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.produto = this.navParams.get('produto');
+    this.quantidade = this.navParams.get('quantidade');
   }
 
   ionViewDidLoad() {

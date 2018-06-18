@@ -15,7 +15,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
     this.produtos = [
       {
-        imagem: 'http://www.doceeamor.com.br/images/tortas-doce.png',
+        imagem: 'https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/04/17/bolo-de-chocolate-fofinho-com-cobertura.jpg',
         produto: 'Bolo de chocolate'
       },
       {

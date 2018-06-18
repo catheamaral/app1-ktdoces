@@ -20,6 +20,7 @@ import { ToastController } from 'ionic-angular';
 export class ProdutoPage {
 
   produto: any
+ 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
     this.produto = this.navParams.get('produto');
@@ -34,6 +35,7 @@ export class ProdutoPage {
 
   addCarrinho(){
     this.navCtrl.push(CarrinhoPage, {produto: this.produto})
+
     console.log("Adicionado no carrinho");
     let toast = this.toastCtrl.create({
       message: 'Adicionado no carrinho',

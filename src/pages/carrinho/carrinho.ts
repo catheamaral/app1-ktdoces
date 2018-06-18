@@ -13,9 +13,11 @@ import { ToastController } from 'ionic-angular';
 export class CarrinhoPage {
 
   produto: any
+  quantidade: any
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public navParams: NavParams) {
     this.produto = this.navParams.get('produto');
+    this.quantidade = this.navParams.get('quantidade');
   }
 
   

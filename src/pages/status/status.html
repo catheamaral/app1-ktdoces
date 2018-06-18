@@ -13,13 +13,13 @@
 
 <ion-content padding>
   <hr>
-  <h2>Pedido nº 001245</h2>
+  <h2>Seu pedido</h2>
   <hr>
-  <p style="text-align: center;">
+  <!--<p style="text-align: center;">
     Status : Pedido enviado
-  </p>
+  </p>-->
   <ion-list>
     <ion-list-header>Produto</ion-list-header>
-    <ion-item>{{produto.produto}}</ion-item>
+    <ion-item>{{produto.produto}} - {{this.quantidade}}</ion-item>
   </ion-list>
 </ion-content>
